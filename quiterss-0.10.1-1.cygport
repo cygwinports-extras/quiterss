@@ -1,0 +1,15 @@
+inherit qt4-qmake
+
+CATEGORY="Web"
+SUMMARY="Qt RSS/Atom feed reader"
+HOMEPAGE="http://code.google.com/p/quite-rss/"
+SRC_URI="http://quite-rss.googlecode.com/files/QuiteRSS-${PV}-src.tar.gz"
+SRC_DIR="QuiteRSS-${PV}-src"
+PATCH_URI="01-system-sqlite3.patch
+           02-vpath.patch"
+
+DEPEND="pkgconfig(QtSql)
+	pkgconfig(QtWebKit)
+	pkgconfig(sqlite3)"
+
+DOCS="HISTORY_*"
