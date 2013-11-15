@@ -1,11 +1,11 @@
---- origsrc/QuiteRSS-0.10.1-src/QuiteRSS.pro	2012-08-16 00:45:23.000000000 -0500
-+++ src/QuiteRSS-0.10.1-src/QuiteRSS.pro	2012-09-01 23:10:15.335468200 -0500
-@@ -131,7 +131,7 @@ unix {
-   icon_48.path =  $$PREFIX/share/icons/hicolor/48x48/apps
-   icon_64.path =  $$PREFIX/share/icons/hicolor/64x64/apps
+--- origsrc/QuiteRSS-0.13.3-src/QuiteRSS.pro	2013-08-30 11:46:17.000000000 -0500
++++ src/QuiteRSS-0.13.3-src/QuiteRSS.pro	2013-11-14 18:40:40.187880100 -0600
+@@ -252,7 +252,7 @@ unix {
+   icon_128.path = $$quote($$PREFIX/share/icons/hicolor/128x128/apps)
+   icon_256.path = $$quote($$PREFIX/share/icons/hicolor/256x256/apps)
  
--  translations.files = $$DESTDIR/lang/*.qm
-+  translations.files = $$OUT_PWD/$$DESTDIR/lang/*.qm
-   translations.path =  $$PREFIX/share/quiterss/lang
+-  translations.files = $$quote($$DESTDIR/lang/)*.qm
++  translations.files = $$quote($$OUT_PWD/$$DESTDIR/lang/)*.qm
+   translations.path =  $$quote($$DATA_DIR/lang)
    translations.CONFIG += no_check_exist
  
